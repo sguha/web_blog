@@ -4,8 +4,9 @@ app = Flask(__name__) # equivalent to main
 
 @app.route('/') # www.appsite.com/api/
 
-def hello_method():
-    return "Hello from Flask"
+def message_method():
+    message = "Hello from Flask"
+    return message
 
 if __name__ == '__main__':
     app.run()
